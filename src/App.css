@@ -1,0 +1,137 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: rgb(208, 226, 245);
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(11, 231, 29);
+  padding: 10px;
+  color: rgb(85, 8, 228);
+  border: 2px dotted rgb(10, 10, 10);
+  box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+-webkit-box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+-moz-box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+}
+
+.header h1{
+  font-weight: 500;
+  text-shadow: 5px 0px 10px rgba(246,10,10,0.6);
+}
+
+.section{
+  display: flex;
+  margin: 5px 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.buttonsec button{
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.buttonsec button:hover{
+  background-color: aquamarine;
+  color: royalblue;
+}
+
+icons span{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+}
+.icone{
+  font-size: 40px;
+  margin: 10px 15px;
+}
+
+.icone :hover{
+  color: royalblue;
+  background-color: aquamarine;
+}
+
+.section1{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.section1 h3{
+  color: blue;
+  position: relative;
+  margin-top: -10px;
+  text-shadow: 5px 0px 10px rgba(246,10,10,0.6);
+}
+
+.textbox textarea{
+  border-radius: 15px;
+  padding: 5px;
+  color: blueviolet;
+  font-weight: 400;
+  font-size: 15.5px;
+  box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+-webkit-box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+-moz-box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+}
+
+.previewbox p{
+  width: 450px;
+  height: 360px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  color: blueviolet;
+  text-align: left;
+  background-color: white;
+  overflow-wrap: anywhere;
+  font-weight: 400;
+  font-size: 15px;
+  box-shadow: 7px 7px 6px 3px rgba(0,0,0,0.76);
+-webkit-box-shadow: 7px 7px 6px 3px rgba(0,0,0,0.76);
+-moz-box-shadow: 7px 7px 6px 3px rgba(0,0,0,0.76);
+}
+
+.footer{
+  width: 100%;
+  height: 70px;
+  background-color: rgb(11, 231, 29);
+  color: rgb(85, 8, 228);
+  border-radius: 15px;
+  border: 2px dotted black;
+  display: flex;
+  padding: 20px;
+  box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+-webkit-box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+-moz-box-shadow: -6px 9px 6px 3px rgba(0,0,0,0.76);
+}
+
+.footer h5{
+  margin-right: 50px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 720px){
+  .section{
+    display: block;
+  }
+  .section1{
+    display: block;
+  }
+  .previewbox{
+    margin-top: 40px;
+  }
+  .previewbox p{
+    margin-left: 6%;
+  }
+  .footer{
+    margin-top: 10%;
+  }
+}
