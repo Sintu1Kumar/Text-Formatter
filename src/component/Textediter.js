@@ -16,36 +16,42 @@ export default function Textediter() {
   }
 
   let upperCase = () => {
-    if (pretext.textTransform != "upperCase") {
-      posttext({
-        textTransform: "upperCase",
-      });
-    }
+    let upperCase = a.toUpperCase()
+    b(upperCase)
+    setTimeout(()=>{
+      alert("Text has been changed in UpperCase")
+    },1000)
   };
 
   let lowerCase = () => {
-    if (pretext.textTransform != "lowerCase") {
-      posttext({
-        textTransform: "lowerCase",
-      });
-    }
+    let lowerCase = a.toLowerCase();
+    b(lowerCase)
+    setTimeout(()=>{
+      alert("Text has been changed in lowerCase")
+    },1000)
   };
 
   let properCase = () => {
-    if (pretext.textTransform != "capitalize") {
-      posttext({
-        textTransform: "capitalize",
-      });
-    }
+    let properCase = a.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
+    b(properCase)
+    setTimeout(()=>{
+      alert("Text has been changed in properCase")
+    },1000)
   };
 
   function spaceRemove() {
     let spaceRemove = a.trim().split(/ +/).join(" ");
     b(spaceRemove);
+    setTimeout(()=>{
+      alert("Extra space has been removed")
+    },1000)
   }
 
   function clearText() {
     b("");
+    setTimeout(()=>{
+      alert("Text Clear")
+    },1000)
   }
 
   let [pretext, posttext] = useState({
@@ -59,6 +65,9 @@ export default function Textediter() {
         textAlign: "left",
       });
     }
+    setTimeout(()=>{
+      alert("TextAlign left")
+    },1000)
   };
 
   let textright = () => {
@@ -67,6 +76,9 @@ export default function Textediter() {
         textAlign: "right",
       });
     }
+    setTimeout(()=>{
+      alert("TextAlign right")
+    },1000)
   };
 
   let textcenter = () => {
@@ -75,18 +87,24 @@ export default function Textediter() {
         textAlign: "center",
       });
     }
+    setTimeout(()=>{
+      alert("TextAlign center")
+    },1000)
   };
 
   let textbold = () => {
-    if (pretext.fontWeight != "bold") {
+    if (pretext.fontStyle != "bold") {
       posttext({
-        fontWeight: "bold",
+        fontStyle: "bold",
       });
     } else {
       posttext({
-        fontWeight: "normal",
+        fontStyle: "normal",
       });
     }
+    setTimeout(()=>{
+      alert("Text bold")
+    },1000)
   };
 
   let textitalic = () => {
@@ -99,6 +117,9 @@ export default function Textediter() {
         fontStyle: "normal",
       });
     }
+    setTimeout(()=>{
+      alert("Text italic")
+    },1000)
   };
 
   let textunderline = () => {
@@ -111,6 +132,9 @@ export default function Textediter() {
         textDecorationLine: "none",
       });
     }
+    setTimeout(()=>{
+      alert("Text underline")
+    },1000)
   };
 
   return (
